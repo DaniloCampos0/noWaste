@@ -414,8 +414,9 @@ a:focus {
   margin-top: 45px;
   border-radius: 5px;
   padding: 20px 15px;
-  background-color: #4b0082;
+  background-color: white;
   color: #ffffff;
+  box-shadow: 10px 10px 8px #a9a9a9;
 }
 
 .offer_section .box .img-box {
@@ -442,12 +443,14 @@ a:focus {
   font-family: 'Dancing Script', cursive;
   font-size: 40px;
   margin: 0;
+  color: #000000;
 }
 
 .offer_section .box .detail-box h6 {
   font-family: 'Dancing Script', cursive;
   margin: 10px 0;
   font-size: 30px;
+  color: #000000;
   
 }
 
@@ -513,10 +516,11 @@ a:focus {
   margin-top: 25px;
   background-color: #ffffff;
   border-radius: 10px;
-  color: #ffffff;
+  color: #a9a9a9;
   border-radius: 15px;
   overflow: hidden;
-  background: linear-gradient(to bottom, #f1f2f3 25px, #260b39 25px);
+  background: linear-gradient(to bottom, #f1f2f3 25px, white 25px);
+  box-shadow: 5px 5px 10px #a9a9a9;
 }
 
 .food_section .box .img-box {
@@ -534,7 +538,7 @@ a:focus {
   border-radius: 0 0 0 45px;
   margin: -1px;
   padding: 25px;
-  background-color: #d3d3d3;
+  background-color: white;
 }
 
 .food_section .box .img-box img {
@@ -547,7 +551,7 @@ a:focus {
 
 .food_section .box .detail-box {
   padding: 25px;
-  background-color: #260b39;
+  background-color: #e8fccf;
 }
 
 .food_section .box .detail-box h5 {
@@ -671,9 +675,6 @@ a:focus {
   background-color: #a9a9a9;
 }
 
-.book_section {
-  position: relative;
-}
 
 .book_section .heading_container {
   margin-bottom: 25px;
