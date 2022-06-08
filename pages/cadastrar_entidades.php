@@ -13,7 +13,7 @@ require_once ('../conexao/conexao.php');
 </head>
 <body>
     <h1>Cadastro entidades</h1>
-  <form method="POST" action="include.php">
+  <form method="POST" action="../conexao/adicionar_entidade.php">
     <div class="form-group">
       <label for="nomeEntidade">Nome entidade</label>
       <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade" placeholder="Nome" required>

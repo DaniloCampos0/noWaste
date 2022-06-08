@@ -108,7 +108,7 @@ require_once ('../conexao/conexao.php');
       <div class="row">
         <div class="col-md-12">
           <div class="form_container">
-          <form method="POST" action="adicionar_doacao.php">
+          <form method="POST" action="../conexao/adicionar_doacao.php">
             <div class="form-group header_section container-fluid">
                 <label for="ent_beneficiada">Entidade beneficiada:</label>
                 <input type="text" class="form-control" name="ent_beneficiada" id="ent_beneficiada" minlength="5" required>

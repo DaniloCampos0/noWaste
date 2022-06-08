@@ -16,7 +16,7 @@ require_once ('../conexao/conexao.php');
 </head>
       
 <body>
-    <form action="adicionar_contato.php" method="post">
+    <form action="../conexao/adicionar_contato.php" method="post">
     <div class="form-group">
         <label for="userEmail">Nome</label>
         <input type="text" name="u_nome" id="userNome" placeholder="Nome" required><br><br>
