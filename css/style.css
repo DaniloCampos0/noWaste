@@ -128,9 +128,16 @@ a:focus {
   left: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+}
+
+.padding_right_left {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .sub_page .hero_area .bg-box img {
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

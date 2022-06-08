@@ -1,5 +1,5 @@
 <?php
-require_once ('conexao.php');
+require_once ('../conexao/conexao.php');
 
 ?>
 
@@ -16,7 +16,7 @@ require_once ('conexao.php');
 </head>
       
 <body>
-    <form>
+    <form action="adicionar_contato.php" method="post">
     <div class="form-group">
         <label for="userEmail">Nome</label>
         <input type="text" name="u_nome" id="userNome" placeholder="Nome" required><br><br>
@@ -36,10 +36,15 @@ require_once ('conexao.php');
                 <option id="celular" value="celular">Celular</option>
             </select><br><br>
 
-        <div class="form-group">    
+        <!-- <div class="form-group">    
             <label for="whatsapp">Whatsapp</label>
             <input type="text" name="whatsapp" id="whatsapp"  placeholder="(00)0000-0000"  pattern="[0-9]+$" minlenght="10" required><br><br>
-    </div>    
+    </div>  -->
+    
+    <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="ZapZap">
+            <label for="whatsapp">WhatsApp</label>
+        </div>
                         
     <div class="form-group">
             <label for="redeSocial">Rede Social</label>

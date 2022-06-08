@@ -1,5 +1,5 @@
 <?php
-require_once ('conexao.php');
+require_once ('../conexao/conexao.php');
 
 ?>
 
@@ -13,7 +13,7 @@ require_once ('conexao.php');
 </head>
 <body>
     <h1>Cadastro entidades</h1>
-  <form method="$_GET" action="include.php">
+  <form method="POST" action="include.php">
     <div class="form-group">
       <label for="nomeEntidade">Nome entidade</label>
       <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade" placeholder="Nome" required>

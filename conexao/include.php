@@ -1,13 +1,13 @@
 <?php
 require_once 'conexao.php';
 
-$nome_entidade = $_GET['nomeEntidade'];
-$cnpj = $_GET['CNPJ'];
-$email = $_GET['email'];
-$nome_usuario = $_GET['nomeUsuario'];
-$senha = $_GET['senha'];
-// $confirmacaoSenha = $_GET['confirmacaoSenha'];
-// $imagemPerfil = $_GET['imagemPerfil'];
+$nome_entidade = $_POST['nomeEntidade'];
+$cnpj = $_POST['CNPJ'];
+$email = $_POST['email'];
+$nome_usuario = $_POST['nomeUsuario'];
+$senha = $_POST['senha'];
+// $confirmacaoSenha = $_POST['confirmacaoSenha'];
+// $imagemPerfil = $_POST['imagemPerfil'];
 
 $consulta = "INSERT INTO `entidade`(`nome_ent`,`CNPJ`,`email`,`nome_usuario`, `senha`) VALUES ('$nome_entidade','$cnpj','$email','$nome_usuario', '$senha')";
 echo($consulta);
