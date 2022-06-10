@@ -15,7 +15,7 @@ $retorno = mysqli_query($conexao, $consulta);
 
 if($retorno){
     echo(" Registro inserido ");
-    header('Location: index.php');
+    header('Location: ../index.html');
 }
 
 //echo($select);

@@ -16,5 +16,5 @@
         echo("Erro ao executar consulta: [$query]. Erro: " . mysqli_error($conexao));
     }
 
-    header('location:index.html');
+    header('location:../index.html');
 ?>
