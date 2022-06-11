@@ -85,28 +85,39 @@
   <!-- book section -->
   <section class="book_section layout_padding">
     <div class="container">
-      <div class="heading_container" style="padding-left: 520px;">
+      <div class="heading_container" style="padding-left: 470px;">
         <h2>
-          Login
+          Cadastre-se
         </h2>
       </div>
       <div class="row" style="padding-left:380px">
         <div class="col-md-6">
           <div class="form_container">
             <form action="./conexao/include.php">
-              
-              
+              <div>
+                <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade" placeholder="Nome"
+                  required />
+              </div>
+              <div>
+                <input type="text" class="form-control" name="CNPJ" id="CNPJ" placeholder="00.000.000/0000-00"
+                  minlength="14" maxlenght="14" pattern="[0-9]+$" required>
+              </div>
+              <div>
+                <input type="email" required="required" class="form-control" placeholder="Email" name="email" id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+              </div>
               <div>
                 <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
                   id="nomeUsuario" required>
-                  <div>
-                  <input type="email" required="required" class="form-control" placeholder="Email" name="email" id="email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                </div>
-                </div>
-              <div></div>
+              </div>
+              <div>
                 <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
                   required>
+              </div>
+
+              <p>Insira uma foto de perfil</p>
+              <input type="file" class="btn btn-secundary btn-lg disabled" name="imagemPerfil" id="imagemPerfil">
+
               <div class="btn_box" style="padding-left: 90px;">
                 <button>
                   Enviar
