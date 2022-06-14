@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  background-color: #DEDFDA ;
   overflow-x: hidden;
 }
 
@@ -116,6 +116,7 @@ a:focus {
   -o-object-fit: cover;
      object-fit: cover;
      filter: brightness(45%);
+    
 }
 
 .sub_page .hero_area {
@@ -178,7 +179,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: black;
+  color: #d19862;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -241,7 +242,7 @@ a:focus {
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: black;
+  background-color: #d19862;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -250,7 +251,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #a5e051;
+  background-color: #EC9B3E;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -356,7 +357,7 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color:black;
+  background-color:#d19862;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -396,7 +397,7 @@ a:focus {
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #a5e051;
+  background-color: #d19862;
 }
 
 .offer_section {
@@ -516,7 +517,7 @@ a:focus {
   margin-top: 25px;
   background-color: #ffffff;
   border-radius: 10px;
-  color: white;
+  color: black;
   border-radius: 15px;
   overflow: hidden;
   background: linear-gradient(to bottom, #f1f2f3 25px, white 25px);
@@ -546,12 +547,12 @@ a:focus {
   max-height: 180px;
   -webkit-transition: all .2s;
   transition: all .2s;
-  border-radius: 0 45px 0 45px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .food_section .box .detail-box {
   padding: 25px;
-  background-color: black;
+  background-color: white;
 }
 
 .food_section .box .detail-box h5 {
@@ -624,7 +625,7 @@ a:focus {
 }
 
 .food_section .btn-box a:hover {
-  background-color:#a9a9a9;
+  background-color:#EC9B3E;
   color: #ffffff;
 }
 
@@ -780,7 +781,7 @@ a:focus {
 
 .client_section .box .img-box img {
   border-radius: 100%;
-  border: 5px solid black;
+  border: 5px solid #222222;
   position: relative;
 }
 
@@ -791,13 +792,13 @@ a:focus {
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: #222222;
   -webkit-transform: rotate(45deg) translateX(-50%);
           transform: rotate(45deg) translateX(-50%);
 }
 
 .client_section .box .detail-box {
-  background-color: #a9a9a9;
+  background-color: #222222;
   color: #ffffff;
   padding: 25px 25px 15px 25px;
   border-radius: 5px;
@@ -830,7 +831,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 45px;
   height: 45px;
-  background-color: black;
+  background-color: #d19862;
   color: #ffffff;
   outline: none;
   bottom: 0px;
@@ -910,8 +911,8 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: black;
-  color: #ffffff;
+  background-color: #a5e051;
+  color: black;
   padding: 75px 0 40px 0;
   text-align: center;
 }
@@ -928,7 +929,7 @@ a:focus {
 }
 
 .footer_section p {
-  color: #dbdbdb;
+  color: black;
 }
 
 .footer_section .footer-col {
@@ -947,7 +948,7 @@ a:focus {
 
 .footer_section .footer_contact .contact_link_box a {
   margin: 5px 0;
-  color: #ffffff;
+  color: black;
 }
 
 .footer_section .footer_contact .contact_link_box a i {
@@ -955,7 +956,7 @@ a:focus {
 }
 
 .footer_section .footer_contact .contact_link_box a:hover {
-  color: #a5e051;
+  color: black;
 }
 
 .footer_section .footer-logo {
@@ -963,7 +964,7 @@ a:focus {
   font-weight: bold;
   font-size: 38px;
   line-height: 1;
-  color: #ffffff;
+  color: black;
 }
 
 .footer_section .footer_social {
@@ -987,18 +988,18 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #222831;
+  color: black;
   width: 30px;
   height: 30px;
   border-radius: 100%;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 100%;
   margin: 0 2.5px;
   font-size: 18px;
 }
 
 .footer_section .footer_social a:hover {
-  color: #a5e051;
+  color: #d19862;
 }
 
 .footer_section .footer-info {
@@ -1007,7 +1008,7 @@ a:focus {
 }
 
 .footer_section .footer-info p {
-  color: #ffffff;
+  color: black;
   margin: 0;
 }
 
