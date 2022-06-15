@@ -11,12 +11,12 @@ body {
   background-image: url(https://s1.1zoom.me/big0/841/Rice_Meat_products_Vegetables_Tomatoes_Cutting_564070_1280x853.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  filter: brightness(2px);
 }
 
 .carrosel{
   height: 600px;
 }
-
 
 
 .layout_padding {
@@ -256,7 +256,7 @@ a:focus {
 .user_option .order_online {
   display: inline-block;
   padding: 8px 30px;
-  background-color: #EC9B3E;
+  background-color: #ff9505;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -265,7 +265,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #ffbe33;
+  background-color: #EC9B3E;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -373,7 +373,7 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #EC9B3E;
+  background-color: #ff9505;
   color: #ffffff;
   border-radius: 45px;
   -webkit-transition: all 0.3s;
@@ -383,7 +383,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #d19862;
+  background-color: #EC9B3E;
 }
 
 .slider_section .img-box img {
@@ -524,7 +524,7 @@ a:focus {
 }
 
 .food_section .filters_menu li.active {
-  background-color: #EC9B3E;
+  background-color: #ff9505;
   color: #ffffff;
 }
 

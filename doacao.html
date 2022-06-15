@@ -67,17 +67,18 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="menu.html">Quem somos</a>
+                <a class="nav-link" href="quemsomos.html">Quem somos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cadastro.html">Login</a>
-              </li>
+           
             </ul>
             <div class="user_option">
-
-              </form>
               <a href="cadastro.html" class="order_online">
-                Cadastre-se
+              Participe
+              </a>
+            </div>
+            <div class="user_option">
+              <a href="login.html" class="order_online">
+                Login
               </a>
             </div>
           </div>
@@ -97,14 +98,17 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://www.sherlockcomms.com/wp-content/uploads/2020/12/brazilian-food-revolution.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+        <img src="https://www.sherlockcomms.com/wp-content/uploads/2020/12/brazilian-food-revolution.jpg"
+          class="d-block w-100" alt="..." style="height: 550px;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Second slide label</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://conteudo.imguol.com.br/c/entretenimento/8a/2021/03/22/doacao-de-refeicao-para-pessoas-em-situacao-de-vulnerabilidade-1616448339273_v2_615x300.jpg" class="d-block w-100" alt="..." style="height: 600px;">
+        <img
+          src="https://conteudo.imguol.com.br/c/entretenimento/8a/2021/03/22/doacao-de-refeicao-para-pessoas-em-situacao-de-vulnerabilidade-1616448339273_v2_615x300.jpg"
+          class="d-block w-100" alt="..." style="height: 550px;">
         <div class="carousel-caption d-none d-md-block">
           <h5>Third slide label</h5>
           <p>Some representative placeholder content for the third slide.</p>
@@ -172,38 +176,32 @@
                         </div>
                         <div class="modal-body">
                           <div class="form_container">
-                            <form action="./conexao/include.php">
-                              <div style="margin: 10px;">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                  style="color: black;">Email</label>
-                                <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade"
-                                  required />
-                              </div>
-                              <div style="margin: 10px;">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                  style="color: black;">Email</label>
-                                <input type="text" class="form-control" name="CNPJ" id="CNPJ"
-                                  placeholder="00.000.000/0000-00" minlength="14" maxlenght="14" pattern="[0-9]+$"
+
+                            <form method="$_POST" action="adicionar_doacao.php">
+                              <div class="form-group">
+                                <label for="qtde_marmita">Defina a quantidade de marmitas a serem doadas</label>
+                                <input type="number" class="form-control" name="qtde_marmita" id="qtde_marmita"
                                   required>
+                              </div><br> 
+                              <label for="validade" style="padding: 10px;">Validade</label>
+                              <select class="form-select">
+                                <option selected>Selecione</option>
+                                <option name="validade">Menos de 24h</option>
+                                <option name="validade">Aproximadamente 24h</option>
+                                <option name="validade">
+                                  Entre 24h e 48h</option>
+                              </select>
+                              <div class="form-group"><br>
+                                <label for="descricao" style="padding-top: 15px;">Descrição</label>
+                                <div class="form-floating"><textarea class="form-control"
+                                    placeholder="Insira uma descrição sobre a doação das marmitas aqui..."
+                                    name="descricao" id="floatingTextarea2" style="height: 100px"></textarea>
+                                </div>
                               </div>
-                              <div style="margin: 10px;">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                  style="color: black;">Email</label>
-                                <input type="email" required="required" class="form-control" placeholder="Email"
-                                  name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                              </div>
-                              <div style="margin: 10px;">
-                                <label for="exampleFormControlInput1" class="form-label"
-                                  style="color: black;">Email</label>
-                                <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
-                                  id="nomeUsuario" required>
-                              </div>
-                            </form>
                           </div>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                          <button type="button" class="btn btn-secondary">Fazer Doação</button>
+                          <button type="button" class="btn btn-secondary" name="salvarDoacao" id="salvarDoacao">Fazer Doação</button>
                         </div>
                       </div>
                     </div>

@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> No Waaste </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -35,13 +35,14 @@
 
 </head>
 
-<body class="sub_page bodya">
+<body class="sub_page">
 
   <div class="hero_area">
     <div class="bg-box">
-      <img src="images/hero-bg.jpg" alt="">
+      <img src="https://i.pinimg.com/originals/4c/3c/5e/4c3c5e4ed2af2690d979c29e6142ac05.jpg" alt="">
     </div>
     <!-- header section strats -->
+    <div class="bodya">
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -64,15 +65,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="doacao.html">Quem somos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cadastro.html">Login</a>
-              </li>
+           
             </ul>
             <div class="user_option">
-
-              </form>
               <a href="cadastro.html" class="order_online">
-                Cadastre-se
+              Participe
+              </a>
+            </div>
+            
+            <div class="user_option">
+              <a href="login.html" class="order_online">
+                Login
               </a>
             </div>
           </div>
@@ -85,7 +88,7 @@
   <!-- book section -->
   <section class="book_section layout_padding">
     <div class="container">
-      <div class="heading_container" style="padding-left: 520px;">
+      <div class="heading_container" style="padding-left: 520px; color: white;">
         <h2>
           Login
         </h2>
@@ -94,20 +97,18 @@
         <div class="col-md-6">
           <div class="form_container">
             <form action="./conexao/include.php">
-              
-              
-              <div>
+              <div class="mb-3">
                 <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
                   id="nomeUsuario" required>
-                  <div>
-                  <input type="email" required="required" class="form-control" placeholder="Email" name="email" id="email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                </div>
-                </div>
-              <div></div>
-                <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
-                  required>
-              <div class="btn_box" style="padding-left: 90px;">
+              </div>
+              <div>
+                <input type="email" required="required" class="form-control" placeholder="Email" name="email" id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+              </div>
+
+              <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
+                required>
+              <div class="btn_box" style="padding-left: 90px;padding-top: 30px;">
                 <button>
                   Enviar
                 </button>
@@ -118,6 +119,7 @@
       </div>
     </div>
   </section>
+</div>
   <!-- end book section -->
 
   <!-- footer section -->
@@ -166,11 +168,11 @@
               <a href="">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-            
+
               <a href="">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
-          
+
             </div>
           </div>
         </div>
@@ -189,7 +191,7 @@
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By Equipe No Waste
-          
+
         </p>
       </div>
     </div>
