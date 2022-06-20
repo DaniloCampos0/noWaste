@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Feane </title>
+  <title> No Waste </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -52,7 +52,7 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              No Waste
+              <span style="color: chartreuse;">No</span> Waste
             </span>
           </a>
 
@@ -69,18 +69,22 @@
               <li class="nav-item">
                 <a class="nav-link" href="quemsomos.html">Quem somos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quemsomos.html">Contate-nos</a>
+              </li>
 
             </ul>
+            <div>
+              <a href="login.html" class="login">
+                Login
+              </a>
+            </div>
             <div class="user_option">
               <a href="cadastro.html" class="order_online">
                 Participe
               </a>
             </div>
-            <div class="user_option">
-              <a href="login.html" class="order_online">
-                Login
-              </a>
-            </div>
+
           </div>
         </nav>
       </div>
@@ -88,8 +92,9 @@
     <!-- end header section -->
   </div>
   <!-- slider section-->
- 
+
   <!-- end slider section-->
+
   <!-- food section -->
 
   <section class="food_section layout_padding">
@@ -124,9 +129,10 @@
 
                   </div>
                   <!-- Button trigger modal -->
-                  <a href="login.html?id-igreja=100&id-contato=123456" type="button" class="btn btn-secondary d-grid gap-2 col-6 mx-auto">
+                  <a href="login.html?id-igreja=100&id-contato=123456" type="button"
+                    class="btn btn-secondary d-grid gap-2 col-6 mx-auto">
                     Doar
-                </a>
+                  </a>
 
 
                   <!-- Modal -->
@@ -141,7 +147,7 @@
                         <div class="modal-body">
                           <div class="form_container">
 
-                            <form method="get" action="quemsomos.html">
+                            <form method="get" action=" .html">
                               <div class="form-group">
                                 <label for="qtde_marmita">Defina a quantidade de marmitas a serem doadas</label>
                                 <input type="number" class="form-control" name="qtde_marmita" id="qtde_marmita"
@@ -164,12 +170,13 @@
                               </div>
                               <input type="hidden" name="id-igreja" id="id-igreja">
                               <div class="modal-footer">
-                                <button type="submit" class="btn btn-secondary" name="salvarDoacao" id="salvarDoacao">Fazer
+                                <button type="submit" class="btn btn-secondary" name="salvarDoacao"
+                                  id="salvarDoacao">Fazer
                                   Doação</button>
                               </div>
                             </form>
                           </div>
-                        </div>      
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -195,8 +202,9 @@
 
                   </div>
                   <!-- Button trigger modal -->
-                  <button id="42" type="button" class="btn btn-secondary d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal" onclick="document.getElementById('id-igreja').value=this.id">
+                  <button id="42" type="button" class="btn btn-secondary d-grid gap-2 col-6 mx-auto"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    onclick="document.getElementById('id-igreja').value=this.id">
                     Doar
                   </button>
                 </div>

@@ -35,7 +35,7 @@
 
 </head>
 
-<body class="sub_page bodya">
+<body class="sub_page ">
 
   <div class="hero_area">
     <div class="bg-box">
@@ -43,83 +43,88 @@
     </div>
     <!-- header section strats -->
     <div class="bodya">
-    <header class="header_section">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              No Waste
-            </span>
-          </a>
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                <span style="color: chartreuse;">No</span> Waste
+              </span>
+            </a>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="doacao.html">Quem somos</a>
-              </li>
-           
-            </ul>
-            <div class="user_option">
-              <a href="cadastro.html" class="order_online">
-              Participe
-              </a>
-            </div>
-            
-            <div class="user_option">
-              <a href="login.html" class="order_online">
-                Login
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  mx-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="doacao.html">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quemsomos.html">Contate-nos</a>
+                </li>
 
-  <!-- book section -->
-  <section class="book_section layout_padding">
-    <div class="container">
-      <div class="heading_container" style="padding-left: 520px; color: white;">
-        <h2>
-          Login
-        </h2>
-      </div>
-      <div class="row" style="padding-left:380px">
-        <div class="col-md-6">
-          <div class="form_container">
-            <form action="./conexao/include.php">
-              <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
-                  id="nomeUsuario" required>
-              </div>
+              </ul>
+
               <div>
-                <input type="email" required="required" class="form-control" placeholder="Email" name="email" id="email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                <a href="login.html" class="login">
+                  Login
+                </a>
+              </div>
+              <div class="user_option">
+                <a href="cadastro.html" class="order_online">
+                  Participe
+                </a>
               </div>
 
-              <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
-                required>
-              <div class="btn_box" style="padding-left: 90px;padding-top: 30px;">
-                <button>
-                  Enviar
-                </button>
-              </div>
-            </form>
+
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+    </div>
+
+    <!-- book section -->
+    <section class="book_section layout_padding">
+      <div class="container">
+        <div class="heading_container" style="padding-left: 520px; color: white;">
+          <h2>
+            Login
+          </h2>
+        </div>
+        <div class="row" style="padding-left:380px">
+          <div class="col-md-6">
+            <div class="form_container">
+              <form action="./conexao/include.php">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
+                    id="nomeUsuario" required>
+                </div>
+                <div>
+                  <input type="email" required="required" class="form-control" placeholder="Email" name="email"
+                    id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                </div>
+
+                <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
+                  required>
+                <div class="btn_box" style="padding-left: 90px;padding-top: 30px;">
+                  <button>
+                    Enviar
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</div>
+    </section>
+  </div>
   <!-- end book section -->
 
   <!-- footer section -->

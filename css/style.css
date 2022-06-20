@@ -3,7 +3,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
-  background-color: #DEDFDA;
+  background-color: #fbfbfb;
   overflow-x: hidden;
 }
 /*customizacao*/
@@ -14,8 +14,9 @@ body {
   filter: brightness(2px);
 }
 
-.carrosel{
-  height: 600px;
+.imgtamanho {
+ height: 125px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 
@@ -181,6 +182,14 @@ a:focus {
   padding-left: 18%;
 }
 
+.login{
+  color: white;
+  padding: 7px;
+}
+.login:hover{
+  color: #a5e051;
+}
+
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
   color: white;
@@ -228,6 +237,7 @@ a:focus {
 
 .user_option .user_link:hover {
   color: #a5e051;
+  
 }
 
 .user_option .cart_link {
@@ -265,7 +275,7 @@ a:focus {
 }
 
 .user_option .order_online:hover {
-  background-color: #EC9B3E;
+  background-color: #a5e051;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -383,7 +393,7 @@ a:focus {
 }
 
 .slider_section .detail-box a:hover {
-  background-color: #EC9B3E;
+  background-color: #a5e051;
 }
 
 .slider_section .img-box img {
@@ -1033,3 +1043,80 @@ a:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/*** Team ***/
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  height: calc(100% - 38px);
+  transition: .5s;
+}
+
+.team-item img {
+  transition: .5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item:hover {
+  height: 100%;
+}
+
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}
+
+/*about*/
+
+#about {
+  margin-top: 20px;
+  padding: 100px 0px 0px 0px;
+  position: relative;
+  z-index: 9;
+}
+
+#about .section-heading h2 {
+  padding-right: 120px;
+}
+
+#about img {
+  width: 100%;
+  overflow: hidden;
+}
+
+#about .left-text-content p {
+  margin-bottom: 25px;
+}
+
+#about .right-content {
+  margin-left: 30px;
+}
+
+#about .right-content .thumb {
+  position: relative;
+}
+
+#about .right-content .thumb a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  line-height: 70px;
+  text-align: center;
+  background-color: #fb5849;
+  color: #fff;
+  border-radius: 50%;
+  transform: translate(-35px, -35px);
+  transition: all .3s;
+}
+
+#about .right-content .thumb a:hover {
+  opacity: .9;
+}
+
+
+/*
