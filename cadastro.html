@@ -100,7 +100,7 @@
         <div class="row" style="padding-left:380px">
           <div class="col-md-6">
             <div class="form_container">
-              <form action="./conexao/include.php">
+              <form method="$_GET" action="./conexao/include.php">
                 <div>
                   <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade" placeholder="Nome"
                     required />
@@ -126,9 +126,7 @@
                 <input type="file"  style="padding-left: 100px;" class="btn btn-secundary btn-lg disabled" name="imagemPerfil" id="imagemPerfil">
 
                 <div class="btn_box" style="padding-left: 105px;">
-                  <button>
-                    Enviar
-                  </button>
+                  <input type="submit" class="form-control" name="salvarUsuario" id="salvarUsuario">
                 </div>
               </form>
             </div>

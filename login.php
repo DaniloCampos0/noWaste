@@ -1,3 +1,34 @@
+<?php include ('conexao/conexao.php');
+
+ if(isset($_POST['login']) || isset($_post['senha'])){
+
+    if(strlen($_POST['login']) == 0){
+        echo "preencha seu login";}
+       else if(strlen($_POST['senha']) == 0){
+            echo "preencha sua senha";
+    } else{
+        $login= $mysqli->real_escape_string($_POST['login']);
+        $senha= $mysqli->real_escape_string($_POST['senha']);
+
+        $sql_code = "SELECT *from usuario where login = '$login' and senha = '$senha'";
+        $sql_query= $mysqli->query($sql_code) or die ("falha na execução do codigo: " . $mysqli->error);
+
+        $quantidade = $sql_query->num_rows;
+        if($quantidade == 1){
+            $usuario =$sql_query->fetch_assoc();
+            if(isset($_SESSION)){
+                session_start();
+            }
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+
+            header("Location: .php");
+        }else{
+        echo "falha ao logar! login ou senha errada";
+        }
+    }
+ }?>
+
 <!DOCTYPE html>
 <html>
 

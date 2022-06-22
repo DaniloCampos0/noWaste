@@ -1,3 +1,6 @@
+<?php 
+include ('protect.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -178,12 +181,13 @@
                         <div class="modal-body">
                           <div class="form_container">
 
-                            <form method="get" action=" .html">
+                            <form method="POST" action="adicionar_doacao.php">
                               <div class="form-group">
                                 <label for="qtde_marmita">Defina a quantidade de marmitas a serem doadas</label>
                                 <input type="number" class="form-control" name="qtde_marmita" id="qtde_marmita"
                                   required>
                               </div><br>
+
                               <label for="validade" style="padding: 10px;">Validade</label>
                               <select class="form-select">
                                 <option selected>Selecione</option>
@@ -192,6 +196,7 @@
                                 <option name="validade">
                                   Entre 24h e 48h</option>
                               </select>
+                              
                               <div class="form-group"><br>
                                 <label for="descricao" style="padding-top: 15px;">Descrição</label>
                                 <div class="form-floating"><textarea class="form-control"
