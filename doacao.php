@@ -163,7 +163,7 @@ $retorno_select_ent = mysqli_query($conexao,$select_entidade);
 //   c.id_contato = e.id_ent;"; 
   
 while($linha = mysqli_fetch_assoc($retorno_select_ent)){
-  $id_ent = $linha['id-igreja'];
+  $id_ent = $linha['id_igreja'];
   $nome_entidade = $linha['nome_ent'];
   $cnpj = $linha['CNPJ'];
   $email = $linha['email'];

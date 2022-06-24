@@ -4,7 +4,7 @@ $usuario    =   $_POST['nomeUsuario'];
     $senha        =   $_POST['senha'];
 
     //agora que pegamos usuario e senha vamos consultar no banco de dados
-    $query = "Select nome_usuario, senha from estabelecimento where nome_usuario = '$usuario' and senha = '$senha';";
+    $query = "Select nome_usuario, senha from entidade where nome_usuario = '$usuario' and senha = '$senha';";
     $retorno=mysqli_query($conexao,$query);
     $linhas_retorno = mysqli_num_rows($retorno);
     if ($linhas_retorno<1){
