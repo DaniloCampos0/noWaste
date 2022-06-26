@@ -16,7 +16,7 @@
   <title> No Waste </title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css"
@@ -26,12 +26,12 @@
     integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
     crossorigin="anonymous" />
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="../css/responsive.css" rel="stylesheet" />
 
 </head>
 
@@ -100,20 +100,90 @@
         <div class="row" style="padding-left:380px">
           <div class="col-md-6">
             <div class="form_container">
-              <form method="POST" action="adicionar_cadastro_ent.php">
+              <form method="POST" action="entidades/adicionar_cadastro_ent.php">
                 <div class="form-group">
                   <label for="nomeEntidade">Nome entidade</label>
                   <input type="text" class="form-control" name="nomeEntidade" id="nomeEntidade" placeholder="Nome" required>
                 </div>
                 <div class="form-group">
                   <label for="CNPJ">CNPJ</label>
-                  <input type="text" class="form-control" name="CNPJ" id="CNPJ" placeholder="00.000.000/0000-00" minlength="14" maxlenght="14" pattern="[0-9]+$" required>
+                  <input type="text" class="form-control" name="CNPJ" id="CNPJ" placeholder="00.000.000/0000-00" maxlength="14"  pattern="[0-9]+$" required>
                 </div>
-            
+
+                <!-- <h2 style="color: white;">
+                  Contato
+                </h2> -->
+
                 <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" required="required" class="input-text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                </div>
+                  <label for="email">Email</label>
+                  <input type="email" required="required" class="input-text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                </div>  
+
+                <div class="form-floating mb-3">
+                  <label for="telefone">Telefone</label>
+                  <input type="text" name="telefone" id="telefone"  placeholder="(00)0000-0000" pattern="[0-9]+$" maxlength="15" autocomplete="off" id= "3" required>            
+              </div>
+             
+              <label for="tipo_telefone">Tipo telefone</label>
+              <select name="tipo_telefone" id="tipo_telefone">
+                <option value="1">Celular</option>
+                <option value="2">Comercial</option>
+                <option value="3">Residencial</option>
+              </select>
+               <br><br>
+      
+              <div class="form-floating mb-3">
+                  <input type="tel" class="form-control" id="whatsapp" name="whatsapp" placeholder="">
+                  <label for="whatsapp">WhatsApp</label>
+              </div>
+      
+              <div class="form-group">
+                  <label for="redeSocial">Rede Social</label>
+                  <input type="text" name="redeSocial" id="redeSocial" placeholder="Informe uma rede social" required><br><br>
+              </div>
+
+              <!-- <h2 style="color: white;">
+                Endereço
+              </h2> -->
+
+              <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" class="input-text" name="cidade" id="cidade" required>
+              </div>
+
+              <div>
+                <label for="estado">Estado</label>
+                <input type="text" class="input-text" name="estado" id="estado" maxlength="2" required>
+              </div>
+
+              <div>
+                <label for="cep">CEP</label>
+                <input type="text" class="input-text" name="cep" id="cep" pattern="[0-9]+$" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" name="bairro" id="bairro" required>
+             </div>
+
+              <div class="form-group">
+                 <label for="rua">Rua</label>
+                 <input type="text" class="form-control" name="rua" id="rua" required>
+              </div>
+
+              <div>
+                <label for="numero">Número</label>
+                <input type="text" class="input-text" name="numero" id="numero" required>
+              </div>
+
+              <div>
+                <label for="complemento">Complemento</label>
+                <input type="text" class="input-text" name="complemento" id="complemento" required>
+              </div>
+            
+              <!-- <h2 style="color: white;">
+                Informações de login
+              </h2>   -->
             
                 <div class="form-group">
                   <label for="nomeUsuario">Nome de usuário</label>

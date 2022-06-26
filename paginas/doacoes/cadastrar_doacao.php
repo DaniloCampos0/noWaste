@@ -25,7 +25,6 @@
   
     <label for="validade">Validade</label>
     <select name= "validade" class="form-select">
-        <option selected>selecione</option>
         <option>Menos de 24h</option>
         <option>Aproximadamente 24h</option>
         <option>Entre 24h e 48h</option>

@@ -84,7 +84,7 @@ require_once('conexao/conexao.php')
               </a>
             </div>
             <div class="user_option">
-              <a href="cadastro.html" class="order_online">
+              <a href="paginas/cadastro.html" class="order_online">
                 Participe
               </a>
             </div>
@@ -145,30 +145,26 @@ require_once('conexao/conexao.php')
       </ul>
 
 <?php      
-$select_entidade = "SELECT id_ent, nome_ent, CNPJ, email, nome_usuario FROM entidade ";
-$retorno_select_ent = mysqli_query($conexao,$select_entidade);
+$select_entidade = "SELECT e.id_ent, e.nome_ent, e.cnpj, e.telefone, e.id_tipo_contato, e.whatsapp, e.rede_social, e.email, e.numero, e.bairro, e.rua, e.complemento, e.estado, e.cidade, e.cep, e.nome_usuario FROM entidade e;"; 
+$retorno_select = mysqli_query($conexao,$select_entidade);
 
-// Select pra trazer todos os dados da igreja do banco pra página. Ainda não tá funcionando pq falta configurar o banco
-// "SELECT 
-//   e.id_ent, e.nome_ent, e.CNPJ, e.email, e.nome_usuario, d.numero, d.bairro, d.tipoLogradouro, d.nomeLogradouro, d.complemento, d.estado, d.cidade, d.cep, c.nome_contato, c.email, c.telefone, c.whatsapp, c.rede_social  
-// FROM 
-//   entidade e
-// INNER JOIN
-//   endereco d
-// ON
-//   d.id_endereco_entidade = e.id_ent
-// INNER JOIN
-//   contato c 
-// ON
-//   c.id_contato = e.id_ent;"; 
   
-while($linha = mysqli_fetch_assoc($retorno_select_ent)){
-  $id_ent = $linha['id_igreja'];
+while($linha = mysqli_fetch_assoc($retorno_select)){
+  $id_ent = $linha['id_ent'];
   $nome_entidade = $linha['nome_ent'];
-  $cnpj = $linha['CNPJ'];
+  $telefone = $linha['telefone'];
+  //$tipo_contato = $linha['tipo'];
+  $whatsapp = $linha['whatsapp'];
   $email = $linha['email'];
+  $cidade = $linha['cidade'];
+  $estado = $linha['estado'];
+  $bairro = $linha['bairro'];
+  $rua = $linha['rua'];
+  $numero = $linha['numero'];
+  $cep = $linha['cep'];
+  $complemento = $linha['complemento'];
   $nome_usuario = $linha['nome_usuario'];
-
+  $cnpj = $linha['cnpj'];
 
 
 echo '
@@ -186,8 +182,11 @@ echo '
                     $nome_entidade
                   .'</h5>
                   <p>
-                    Contato: *******<br>
+                    Contato: '.$telefone.' <br>
                     Email: '.$email.'
+                  </p>
+                  <p>
+                    '.$rua.', nº '.$numero.' - '.$bairro.'. '.$cidade.' - '.$estado.'.
                   </p>
                   <div class="options">
 

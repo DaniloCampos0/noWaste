@@ -3,13 +3,31 @@ require_once '../../conexao/conexao.php';
 
 $nome_entidade = $_POST['nomeEntidade'];
 $cnpj = $_POST['CNPJ'];
-$email = $_POST['email'];
+
+//login
 $nome_usuario = $_POST['nomeUsuario'];
 $senha = $_POST['senha'];
+
+//contato
+$email = $_POST['email'];
+$telefone = $_POST['telefone'];
+$whatsapp = $_POST['whatsapp'];
+$rede_social = $_POST['redeSocial'];
+$tipo_telefone = $_POST['tipo_telefone'];
 // $confirmacaoSenha = $_GET['confirmacaoSenha'];
 //$imagemPerfil = $_GET['imagemPerfil'];
 
-$consulta = "INSERT INTO entidade(nome_ent, CNPJ, email, nome_usuario, senha) VALUES ('$nome_entidade','$cnpj','$email','$nome_usuario', '$senha')";
+//endereço
+$cep = $_POST ['cep'];
+$cidade = $_POST['cidade'];
+$estado = $_POST['estado'];
+$bairro = $_POST['bairro'];
+$rua = $_POST['rua'];
+$complemento = $_POST['complemento'];
+$numero = $_POST['numero'];
+
+$consulta = "INSERT INTO entidade(nome_ent, cnpj, telefone, id_tipo_contato, whatsapp, rede_social, email, numero, bairro, rua, complemento, estado, cidade, cep, nome_usuario, senha) VALUES ('$nome_entidade','$cnpj','$telefone','$tipo_telefone','$whatsapp','$rede_social','$email','$numero','$bairro','$rua','$complemento','$estado','$cidade','$cep','$nome_usuario', '$senha')";
+
 echo $consulta;
 if (!mysqli_query($conexao, $consulta)) {
     echo("Erro ao executar consulta: [$consulta]. Erro: " . mysqli_error($conexao));
@@ -36,9 +54,6 @@ if (!mysqli_query($conexao, $consulta)) {
         
 //     }
 // }
-
-
-
 //echo($select);
 
 ?>
