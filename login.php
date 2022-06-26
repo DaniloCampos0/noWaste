@@ -1,16 +1,16 @@
 <?php include ('conexao/conexao.php');
 
- if(isset($_POST['login']) || isset($_post['senha'])){
+ if(isset($_POST['nome_usuario']) || isset($_post['senha'])){
 
-    if(strlen($_POST['login']) == 0){
-        echo "preencha seu login";}
+    if(strlen($_POST['nome_usuario']) == 0){
+        echo "preencha seu nome de  usuario";}
        else if(strlen($_POST['senha']) == 0){
             echo "preencha sua senha";
     } else{
-        $login= $mysqli->real_escape_string($_POST['login']);
+        $login= $mysqli->real_escape_string($_POST['nome_usuario']);
         $senha= $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT *from usuario where login = '$login' and senha = '$senha'";
+        $sql_code = "SELECT nome_usuario, senha from entidade where login = '$login' and senha = '$senha'";
         $sql_query= $mysqli->query($sql_code) or die ("falha na execução do codigo: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
@@ -22,7 +22,7 @@
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome'] = $usuario['nome'];
 
-            header("Location: .php");
+            header("Location: pag_entidade.php");
         }else{
         echo "falha ao logar! login ou senha errada";
         }
@@ -137,11 +137,6 @@
                   <input type="text" class="form-control" placeholder="Nome de Usuario" name="nomeUsuario"
                     id="nomeUsuario" required>
                 </div>
-                <div>
-                  <input type="email" required="required" class="form-control" placeholder="Email" name="email"
-                    id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                </div>
-
                 <input type="password" class="form-control" placeholder="Senha" name="senha" id="senha" minlenght="8"
                   required>
                 <div class="btn_box" style="padding-left: 90px;padding-top: 30px;">
