@@ -114,7 +114,7 @@ require_once('conexao/conexao.php')
         <div class="col-lg-6 col-md-6 col-xs-12">
           <div class="right-content">
             <div class="section-heading">
-              <h2>Nome Da Entidade</h2>
+              <h2>Nome do Restuarante</h2>
             </div>
             <p style="padding-top: 20px;">Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant" target="_blank"
                 rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS framework. You can download and
@@ -215,7 +215,7 @@ echo '
                         <div class="modal-body">
                           <div class="form_container">
 
-                            <form method="POST" action="adicionar_doacao.php">
+                            <form method="POST" action="doacoes/adicionar_doacao.php">
                               <div class="form-group">
                                 <label for="qtde_marmita">Defina a quantidade de marmitas a serem doadas</label>
                                 <input type="number" class="form-control" name="qtde_marmita" id="qtde_marmita"
@@ -224,11 +224,9 @@ echo '
 
                               <label for="validade" style="padding: 10px;">Validade</label>
                               <select class="form-select">
-                                <option selected>Selecione</option>
                                 <option name="validade">Menos de 24h</option>
                                 <option name="validade">Aproximadamente 24h</option>
-                                <option name="validade">
-                                  Entre 24h e 48h</option>
+                                <option name="validade">Entre 24h e 48h</option>
                               </select>
                               
                               <div class="form-group"><br>
