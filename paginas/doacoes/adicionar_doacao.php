@@ -5,7 +5,7 @@
     $qtde_marmita = $_POST['qtde_marmita'];
     $validade = $_POST['validade'];
     $descricao = $_POST['descricao'];
-    $id_ent_beneficiada = $_POST['id_ent_beneficiada'];
+    $id_ent_beneficiada = $_POST['id_igreja'];
 
     $query = "INSERT INTO no_waste.doacao(ent_beneficiada, qtde_marmita, validade, desc_conteudo, id_ent_doacao)
     VALUES
